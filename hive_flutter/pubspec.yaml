@@ -1,8 +1,7 @@
 name: hive_flutter
 description: Extension for Hive. Makes it easier to use Hive in Flutter apps.
 version: 2.0.0-dev
-homepage: https://github.com/hivedb/hive/tree/master/hive_flutter
-documentation: https://docs.hivedb.dev/
+publish_to: none
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -11,8 +10,12 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cryptography: ^2.0.5
-  hive: ^3.0.0-dev
+  crypto: ^3.0.0
+  hive:
+    git:
+      url: https://github.com/pschaffl/hive.git
+      path: hive
+      ref: release
   path_provider: ^2.0.10
   path: ^1.8.1
 
